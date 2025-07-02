@@ -1,0 +1,43 @@
+{
+    "status_false":false,
+    "error_code":"DMS99400LWSR1E",
+    "invalid_mobile_err_msg":"mobile_number: Invalid mobile number",
+    "empty_mobile_err_msg":"mobile_number: Mobile number is required",
+    "empty_str":"",
+    "empty_unique_device_id_err_msg": "unique_device_id: \"unique_device_id\" is not allowed to be empty",
+    "empty_otp_verified_err_msg":"otp_verified: \"otp_verified\" must be a boolean",
+    "empty_config_fields_err_msg":"device_configuration,model: \"device_configuration.model\" is not allowed to be empty, device_configuration,os_version: \"device_configuration.os_version\" is not allowed to be empty, device_configuration,battery: \"device_configuration.battery\" is not allowed to be empty",
+    "invalid_config_fields_err_msg":"device_configuration,model: \"device_configuration.model\" with value \"5000Mah@#B\" fails to match the required pattern: /^[a-zA-Z0-9\\s\\-_:;.,()]+$/, device_configuration,os_version: \"device_configuration.os_version\" with value \"5000Mah@#B\" fails to match the required pattern: /^[a-zA-Z0-9\\s\\-_:;.,()]+$/, device_configuration,battery: \"device_configuration.battery\" with value \"5000Mah@#B\" fails to match the required pattern: /^[a-zA-Z0-9\\s\\-_:;.,()]+$/",
+    "invalid_device_id_err_msg":"unique_device_id: \"unique_device_id\" with value \"df43@#$dfd\" fails to match the required pattern: /^[a-zA-Z0-9\\s\\-_:;.,()]+$/",
+    "otp_success_flag": true,
+    "otp_failure_flag": false,
+    "otp_success_message": "OTP sent successfully",
+    "missing_mobile_email_err_msg": "Either mobile number or email is required",
+    "invalid_mobile_number_err_msg": "Please enter a valid mobile number",
+    "invalid_mobile_number_err_msg_2": "Invalid mobile number: +91123",
+    "invalid_email_err_msg": "Please enter a valid email address.",
+    "invalid_country_code_err_msg": "Invalid country code",
+    "mobile_number_5_digits": "62345",
+    "mobile_number_>_13_digits": "6234567890123434",
+    "mobile_num_alphanumeric": "6234567890123434",
+    "mobile_num_special_char": "9100@#678*",
+    "invalid_unique_device_id":"df43@#$dfd",
+    "invalid_device_configuration":"5000Mah@#B",
+    "empty_email_err_msg":"email: \"email\" is not allowed to be empty",
+    "invalid_email_no_at":"demo.com",
+    "invalid_email_no_domain":"demotest@",
+    "invalid_email_error_msg":"email: Invalid email address",
+    "empty_country_code_err_msg":"country_code: \"country_code\" is not allowed to be empty",
+    "invalid_country_code_error_msg":"country_code: Country code must be between 1 and 3 digits, mobile_number: Invalid mobile number",
+    "country_code_missing_plus_err_msg":"country_code: Country code must be between 1 and 3 digits",
+    "invalid_countryCode_format":"2345",
+    "countryCode_special_chars":"+91@#",    
+    "countryCode_without_plus":"91",
+    "school_code": "8435958",
+    "already_mapped_msg": "Device is already mapped to the school",
+    "unmap_message": "Device successfully unmapped from the school."
+
+
+
+
+}
