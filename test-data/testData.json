@@ -43,7 +43,13 @@
     "invalid_school_code_msg":"params: school_code must contain only alphanumeric characters",
     "school_code_special_chars": "87&TY546@",
     "school_code_with_spaces": " 67 898 87  ",
-    "invalid_school_code_alphanumeric": "122344sd"
+    "invalid_school_code_alphanumeric": "122344sd",
+    "resource_not_found_code": "DMS994042KNU06",
+    "resource_not_found_msg2":"Resource not found",
+    "device_not_registered_code": "DMS99404XJSS5S",
+    "device_not_registered_msg": "Device is not registered",
+    "invalid_device_id_test": "12sde23"
+
 
 
 }
