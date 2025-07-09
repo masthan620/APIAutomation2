@@ -1,6 +1,7 @@
 {
     "status_false":false,
     "error_code":"DMS99400LWSR1E",
+    "error_code2":"DMS9940073J60Y",
     "invalid_mobile_err_msg":"mobile_number: Invalid mobile number",
     "empty_mobile_err_msg":"mobile_number: Mobile number is required",
     "empty_str":"",
@@ -33,11 +34,16 @@
     "invalid_countryCode_format":"2345",
     "countryCode_special_chars":"+91@#",    
     "countryCode_without_plus":"91",
-    "school_code": "8435958",
+    "school_code": "8435957",
     "already_mapped_msg": "Device is already mapped to the school",
-    "unmap_message": "Device successfully unmapped from the school."
-
-
+    "unmap_message": "Device successfully unmapped from the school.",
+    "empty_subscription_key_error_code": "DMS9940073J60Y",
+    "empty_subscription_key_error_msg": "body: \"subscription_key\" is not allowed to be empty",
+    "resource_not_found_msg":"Resource Not Found.",
+    "invalid_school_code_msg":"params: school_code must contain only alphanumeric characters",
+    "school_code_special_chars": "87&TY546@",
+    "school_code_with_spaces": " 67 898 87  ",
+    "invalid_school_code_alphanumeric": "122344sd"
 
 
 }
