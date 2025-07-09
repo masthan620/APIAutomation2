@@ -82,6 +82,7 @@ Given(/^register device:$/, async function (table) {
 });
 
 // ✅ Map device to school - Condition-based (handles existing patterns)
+// Update the existing step definition to handle invalid device_id from testData
 Given(/^(?:I )?map the device to school(?: with (.+))?$/, async function (condition) {
     const endpointTemplate = process.env.MAP_DEVICE_ENDPOINT;
     let schoolCode = testData["school_code"]; // default school code
@@ -104,18 +105,17 @@ Given(/^(?:I )?map the device to school(?: with (.+))?$/, async function (condit
             // Extract school code from: schoolCode "8435957"
             const match = condition.match(/schoolCode "([^"]*)"/);
             schoolCode = match ? match[1] : "";
-            // Handle special case for empty string
-            if (schoolCode === " " || schoolCode === "") {
-                schoolCode = "";
-            }
         }
-        // 🆕 NEW DEVICE_ID VALIDATION CONDITIONS
+        // 🆕 DEVICE_ID VALIDATION CONDITIONS
         else if (condition === "empty device_id") {
             deviceId = ""; // Override device_id with empty string
-        } else if (condition.startsWith('device_id "')) {
-            // Extract device_id from: device_id "guh3iu34"
-            const match = condition.match(/device_id "([^"]*)"/);
-            deviceId = match ? match[1] : "";
+        } else if (condition === "invalid device_id") {
+            // Get invalid device_id from testData
+            deviceId = testData["invalid_device_id_test"];
+        } else if (condition.startsWith('invalid device_id "')) {
+            // Extract device_id from: invalid device_id "12sde23"
+            const match = condition.match(/invalid device_id "([^"]*)"/);
+            deviceId = match ? match[1] : testData["invalid_device_id_test"];
         }
     }
   
