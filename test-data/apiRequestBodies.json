@@ -35,5 +35,9 @@
   },
   "mapDevice": {
     "subscription_key": "abc123"
+  },
+
+  "mapDeviceEmptyKey": {
+    "subscription_key": ""
   }
 }
